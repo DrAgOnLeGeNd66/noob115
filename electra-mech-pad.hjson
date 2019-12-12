@@ -1,0 +1,18 @@
+name: Goliath Mech Pad
+description: Transform into the Goliath Enforcer.
+type: MechPad
+mech: electra-mech
+size: 2
+consumes: {
+  power: 100
+}
+category: upgrade
+research: wraith-factory
+requirements: [
+  copper/5000
+  lead/5000
+  silicon/2000
+  graphite/2000
+  thorium/2000
+  plastanium/1000
+]

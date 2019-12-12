@@ -1,0 +1,65 @@
+name: Goliath
+description: Very strong spaceship. does not much damage, but has the best AoE in the game and CC.
+speed: 2
+boostSpeed: 1.5
+buildPower: 2
+engineColor: "666495"
+flying: true
+health: 300
+weaponOffsetX: 4
+weapon: {
+  name: chrome-blaster
+  length: 10
+  width: 2
+  reload: 60
+  alternate: false
+  shootSound: lasers
+  spacing: 0
+    bullet: {
+      type: BasicBulletType
+      damage: 0.5
+      splashDamageRadius: 2
+      splashDamage: 0.5
+      lifetime: 20
+      speed: 10
+      fragBullets: 10
+      fragBullet: {
+         type: MissileBulletType
+         lifetime: 500
+         speed: 2
+         damage: 0.5
+         collidesTiles: true
+         collidesAir: true
+         collides: true
+         homingPower: 100
+         homingRange: 100
+         splashDamage: 0.5
+         splashDamageRadius: 2
+         fragBullets: 10
+         fragBullet: {
+            type: BombBulletType
+            lifetime: 20
+            speed: 2
+            damage: 0.5
+            collidesTiles: true
+            collidesAir: true
+            collides: true
+            splashDamage: 0.5
+            splashDamageRadius: 20
+            hitSound: silent
+            fragBullets: 10
+            fragBullet: {
+               type: BombBulletType
+               lifetime: 20
+               speed: 2
+               damage: 0.5
+               hitSound: silent
+               collidesTiles: true
+               collides: true
+               splashDamage: 0.5
+               splashDamageRadius: 20
+            }
+         }
+      }
+    }  
+}
